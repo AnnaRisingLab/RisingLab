@@ -1144,7 +1144,7 @@ nav {
 
 /*----- About Section -----*/
 #about {
-    padding-top: 130px;
+    padding-top: 30px;
     padding-bottom: 60px;
 }
 .about-text {
@@ -1841,7 +1841,7 @@ blockquote strong {
 
 /*----- Services -----*/
 #services {
-	padding-top: 125px;
+	padding-top: 30px;
 	padding-bottom: 75px;
 }
 .service {
@@ -3614,6 +3614,9 @@ pre {
 
   .wrapper1 {
       margin-top:70px;
+      margin-bottom: 50px;
+      margin-left:-70px;
+     
       
     display: grid;
     grid-template-columns: 300px 350px 300px  350px;
@@ -3625,7 +3628,7 @@ pre {
   }
 
   .contact-person{
-      margin-top:200px;
+      margin-top:50px;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -3652,6 +3655,10 @@ pre {
     background-color: rgb(15, 1, 1);
     color: white;
     text-align: center;
+  }
+
+  .footer-research{
+      margin-right:0px;
   }
 
   .custom-design{
