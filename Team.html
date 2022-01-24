@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css" type="text/css" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="stylesheet" href="css/style3.css" type="text/css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 <!-- Skin Color -->
@@ -105,7 +106,19 @@
          </div>
       </div>
          
-         
+    <!--Start of Tema photo -->   
+    <h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/assets/teammembers2.jpeg" style="width:100%">
+  <img class="mySlides" src="img/assets/teammembers.jpeg" style="width:100%">
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+ <br/> 
+    <!--End of Tema photo -->  
          
          <div class="row row1 hello1">
            
@@ -286,8 +299,30 @@
    </a>
    <!-- End Back To Top -->
    
+<!--Start of team slider -->
+   <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
 
-<!-- End Site Wrapper -->
+<!--End of team slider -->
+
+
 <!-- jQuery -->
 <script type="text/javascript" src="js/plugins/jquery.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
